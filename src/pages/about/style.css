@@ -56,6 +56,9 @@
         width: 0%;
     }
 }
+.course_header {
+    border-bottom: 3px;
+}
 
 .section-title {
     font-size: 45px;
@@ -63,6 +66,7 @@
 
 .service__title {
     padding: 8px 0;
+    font-weight: 800;
     border-bottom: solid 2px var(--secondary-color);
 }
 

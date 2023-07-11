@@ -1,136 +1,115 @@
-const logotext = "JOHN";
+const logotext = "MS";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Michael Sutanto",
+    description: "Hi, I'm Michael an Electrical Engineering student in UIUC who loves developing new things! " ,
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "Hi! I'm Michael Sutanto!",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "I develop full stack!",
+        second: "I love web3 🚀",
+        third: "I am interested in new technologies!",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "Electrical Engineering and Computer Science student in UIUC who loves developing new things!",
+    your_img_url: "https://i.ibb.co/9qTdtvC/IMG-2249.jpg"
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "about my self",
+    aboutme: "I'm a student software engineer with a strong background in full stack web development, web3 programming, and robotics! I'm naturally curious and my core drivers while working on projects is learning new things!",
 };
-const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
+const courses = [{
+        jobtitle: "CS225",
+        where: "Data Structures and Algorithms",
+        date: "A",
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
+        jobtitle: "CS 440",
+        where: "Machine Learning",
+        date: "A",
     },
     {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "ECE 385",
+        where: "FPGA Programming",
+        date: "B+",
     },
+    {
+        jobtitle: "ECE 391",
+        where: "Computer Systems Engineering",
+        date: "-Pending-",
+    },
+    {
+        jobtitle: "ECE 428",
+        where: "Distributed Systems",
+        date: "-Pending-",
+    }
 ];
 
 const skills = [{
-        name: "Python",
+        name: "Javascript and JS Libraries",
         value: 90,
     },
     {
-        name: "Djano",
+        name: "Python",
         value: 85,
     },
     {
-        name: "Javascript",
+        name: "Solidity",
         value: 80,
     },
     {
-        name: "React",
+        name: "Unit Testing Libraries (Mocha)",
         value: 60,
     },
     {
-        name: "Jquery",
-        value: 85,
+        name: "FPGA Programming (System Verilog)",
+        value: 60,
     },
 ];
 
-const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+const worktimeline = [{
+        title: "Kadena | Software Engineer | June 2022 - June 2023",
+        description: "º Co-developed NFT based token lending protocol for service providers with other interns using Pact-lang, Marmalade, and react.js º Created Typescript API for Marmalade, Kadena’s poly-fungible token protocol, to allow developers incorporating token functionality in dApps without learning Pact"
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "UIUC Disruption Lab | Project Technical Lead | Jan 2022-Jan 2023",
+        description: "º Independently built microservice based API using Node.js, express, and Microsoft Active Azure Directory to link university emails to custodial wallets, thus abstracting cryptographic wallet creation from 5000+ student users º Collaborated with cross-stream developers to write automated frontend tests using Cypress and smart contract tests using Mocha to ensure continuous application integration",
     },
     {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "UIUC Disruption Lab | Software Engineer | Aug 2021 - Jan 2022",
+        description: "º	Conducted and utilized research to create Docker containerization architecture for a private Geth based blockchain that resulted in 99% faster node spin-up time than alternative methods.",
     },
 ];
 
 const dataportfolio = [{
         img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "NFT Lending Protocol",
         link: "#",
     },
     {
         img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "Web3 Credential Wallet",
         link: "#",
     },
     {
         img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "IBlock NFT Marketplace",
         link: "#",
     },
     {
         img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "Rhythm Game Built On FPGA",
         link: "#",
     },
     {
         img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "Cloud Based POS System",
         link: "#",
     },
     {
         img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "Minimax Algorithm Chess Bot",
         link: "#",
     },
 ];
@@ -158,7 +137,7 @@ export {
     dataportfolio,
     worktimeline,
     skills,
-    services,
+    courses,
     introdata,
     contactConfig,
     socialprofils,

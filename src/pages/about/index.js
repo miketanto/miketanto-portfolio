@@ -7,7 +7,7 @@ import {
   meta,
   worktimeline,
   skills,
-  services,
+  courses,
 } from "../../content_option";
 
 export const About = () => {
@@ -36,23 +36,18 @@ export const About = () => {
           </Col>
         </Row>
         <Row className=" sec_sp">
-          <Col lg="5">
-            <h3 className="color_sec py-4">Work Timline</h3>
+        <Col lang="5">
+            <h3 className="color_sec py-4">Work Timeline</h3>
           </Col>
           <Col lg="7">
-            <table className="table caption-top">
-              <tbody>
-                {worktimeline.map((data, i) => {
-                  return (
-                    <tr key={i}>
-                      <th scope="row">{data.jobtitle}</th>
-                      <td>{data.where}</td>
-                      <td>{data.date}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+            {worktimeline.map((data, i) => {
+              return (
+                <div className="service_ py-4" key={i}>
+                  <h5 className="service__title">{data.title}</h5>
+                  <div className="service_desc">{data.description}</div>
+                </div>
+              );
+            })}
           </Col>
         </Row>
         <Row className="sec_sp">
@@ -80,18 +75,28 @@ export const About = () => {
           </Col>
         </Row>
         <Row className="sec_sp">
-          <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
+        <Col lg="5">
+            <h3 className="color_sec py-4">Relevant Courses</h3>
           </Col>
           <Col lg="7">
-            {services.map((data, i) => {
-              return (
-                <div className="service_ py-4" key={i}>
-                  <h5 className="service__title">{data.title}</h5>
-                  <p className="service_desc">{data.description}</p>
-                </div>
-              );
-            })}
+            <table className="table caption-top">
+              <tbody>
+              <tr className = "course_header">
+                      <th scope="row">Name</th>
+                      <th>Topic</th>
+                      <th>Grade</th>
+                </tr>
+                {courses.map((data, i) => {
+                  return (
+                    <tr key={i}>
+                      <th scope="row">{data.jobtitle}</th>
+                      <td>{data.where}</td>
+                      <td>{data.date}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
           </Col>
         </Row>
       </Container>
