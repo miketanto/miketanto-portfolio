@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3d03d5d4.css",
+    "main.js": "/static/js/main.7c7d8a95.js",
+    "static/media/platformio.png": "/static/media/platformio.8f0c99461f08b5480bcb.png",
+    "static/media/tensorflow.png": "/static/media/tensorflow.7e7912265217b92705f6.png",
+    "static/media/cuda.png": "/static/media/cuda.997dee79c108419a84c9.png",
+    "static/media/solidity.png": "/static/media/solidity.2103c27fd4f6a0363e24.png",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.3d03d5d4.css",
+    "static/js/main.7c7d8a95.js"
+  ]
+}
