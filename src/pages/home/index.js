@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
+import { SlArrowDown } from "react-icons/sl";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
@@ -47,6 +48,14 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
+                  <Link to="/about">
+                    <div id="button_h" className="ac_btn btn">
+                      About
+                      <div className="ring one"></div>
+                      <div className="ring two"></div>
+                      <div className="ring three"></div>
+                    </div>
+                  </Link>
                   <Link to="/contact">
                     <div id="button_h" className="ac_btn btn">
                       Contact Me
@@ -60,6 +69,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
+        <div className="scroll_arrow"><Link to="/about"><SlArrowDown size = '40' /></Link></div>
       </section>
     </HelmetProvider>
   );

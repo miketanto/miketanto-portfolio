@@ -28,13 +28,6 @@ export const Socialicons = (params) => {
             </a>
           </li>
         )}
-        {socialprofils.facebook && (
-          <li>
-            <a href={socialprofils.facebook}>
-              <FaFacebookF />
-            </a>
-          </li>
-        )}
         {socialprofils.linkedin && (
           <li>
             <a href={socialprofils.linkedin}>

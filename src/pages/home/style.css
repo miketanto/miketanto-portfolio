@@ -5,6 +5,7 @@ section {
     -webkit-transition: all .5s ease-in;
     -o-transition: all .5s ease-in;
     transition: all .5s ease-in;
+    height:101vh;
 }
 
 .who_am_I {
@@ -232,3 +233,15 @@ section {
 .intro_sec .h_bg-image {
     filter: saturate(0.5);
 }
+
+.scroll_arrow{
+  position: fixed;
+  top: 94%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 9999; /* Set a high z-index to bring it to the front */
+}
+.scroll-icon {
+    width: 35vw; /* Adjust the width and height as needed */
+    height: 7vh;
+  }

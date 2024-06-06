@@ -4,6 +4,10 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
 
+import { SlArrowDown } from "react-icons/sl";
+import { Link } from "react-router-dom";
+import Project from "../../components/project/project";
+
 export const Portfolio = () => {
   return (
     <HelmetProvider>
@@ -19,20 +23,22 @@ export const Portfolio = () => {
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
-        <div className="mb-5 po_items_ho">
+        <div className="mb-5 all-projects-container">
           {dataportfolio.map((data, i) => {
             return (
-              <div key={i} className="po_item">
-                <img src={data.img} alt="" />
-                <div className="content">
-                  <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
-                </div>
+              <div className="all-projects-project" key={i}>
+                <Project
+                logo={data.img}
+                title={data.title}
+                description={data.description}
+                github = {data.github}
+                link={data.link}/>
               </div>
             );
           })}
         </div>
       </Container>
+      <div className="scroll_arrow"><Link to="/contact"><SlArrowDown size = '40' /></Link></div>
     </HelmetProvider>
   );
 };
