@@ -1,6 +1,0 @@
-FROM node:16.20.1-bookworm
-WORKDIR /app
-COPY ./package.json ./
-RUN yarn install
-COPY . .
-CMD ["yarn","start"]
